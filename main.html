@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Calculator</title>
+    <link rel="icon" rel="image/png" href="assets/icon.png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="center_display">
+        <form name="main">
+            <input type="text" name="name" id="calc" value="Calculator">
+            <input type="text" name="final" id="final_answer">
+            <input type="text" name="display" id="display_answer">
+
+            <div class="layer_main">
+                <input type="button" value="C" class="operators" onclick="main.display.value='';main.final.value=''">
+                <input type="button" value="=" class="operators" onclick="main.display.value=eval(main.display.value);main.final.value+='='">
+            </div>
+            <div class="layer">
+                <input type="button" value="7" class="main_numbers" onclick="main.display.value+='7';main.final.value+='7'">
+                <input type="button" value="8" class="main_numbers" onclick="main.display.value+='8';main.final.value+='8'">
+                <input type="button" value="9" class="main_numbers" onclick="main.display.value+='9';main.final.value+='9'">
+                <input type="button" value="*" class="operators" onclick="main.display.value+='*';main.final.value+='*'">
+            </div>
+            <div class="layer">
+                <input type="button" value="4" class="main_numbers" onclick="main.display.value+='4';main.final.value+='4'">
+                <input type="button" value="5" class="main_numbers" onclick="main.display.value+='5';main.final.value+='5'">
+                <input type="button" value="6" class="main_numbers" onclick="main.display.value+='6';main.final.value+='6'">
+                <input type="button" value="-" class="operators" onclick="main.display.value+='-';main.final.value+='-'">
+            </div>
+            <div class="layer">
+                <input type="button" value="1" class="main_numbers" onclick="main.display.value+='1';main.final.value+='1'">
+                <input type="button" value="2" class="main_numbers" onclick="main.display.value+='2';main.final.value+='2'">
+                <input type="button" value="3" class="main_numbers" onclick="main.display.value+='3';main.final.value+='3'">
+                <input type="button" value="+" class="operators" onclick="main.display.value+='+';main.final.value+='+'">
+            </div>
+            <div class="layer">
+                <input type="button" value="." class="operators" onclick="main.display.value+='.';main.final.value+='.'">
+                <input type="button" value="0" class="main_numbers" onclick="main.display.value+='0';main.final.value+='0'">
+                <input type="button" value="√" class="operators" onclick="main.display.value+='**0.5';main.final.value+='**0.5'">
+                <input type="button" value="/" class="operators" onclick="main.display.value+='/';main.final.value+='/'">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
