@@ -1,2 +1,2 @@
 # Basic-Calculator
-Basic Calculator using only HTML5 and CSS3
+This is a VERY Basic Calculator made using HTML5 and CSS3.
